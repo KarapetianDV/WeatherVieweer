@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/conditionImageView"
+        android:layout_width="@dimen/image_side_length"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/weather_condition_image"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/dayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/conditionImageView"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/lowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayTextView"
+        android:layout_toRightOf="@id/conditionImageView"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/hiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/lowTextView"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/hiTextView"
+        android:text="TextView" />
+
+</RelativeLayout>
